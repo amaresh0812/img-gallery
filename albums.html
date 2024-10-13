@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>albums</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .albums{
+            justify-content: center;
+            align-items: center;
+            margin-left: 40%;
+            margin-top: 20%;
+            margin-right: 40%;
+            border: 10px solid goldenrod;
+            border-radius: 5px;
+        }
+        h2{
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        .all{
+            display: none;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .all > img{
+            border: 3px solid black;
+        }
+        display1{
+            display: none;
+            margin-top: 300px;
+        }
+        button{
+            color: crimson;
+            background-color: chartreuse;
+            border-radius: 5px;
+            justify-content: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="albums">
+        <a href="#display1"><img src="images/img-7.jpeg" alt=""></a>
+        <h2>Album</h2>
+        <button type="button"
+            onclick="document.querySelector('.all').style.display = 'flex'">
+            Open Me!
+        </button>
+    </div>
+    <section id="display1">
+        <div class="all">
+            <img src="images/img-1.jpeg" alt="">
+            <img src="images/img-2.jpeg" alt="">
+            <img src="images/img-3.jpeg" alt="">
+            <img src="images/img-4.jpeg" alt="">
+            <img src="images/img-5.jpeg" alt="">
+            <img src="images/img-6.jpeg" alt="">
+            <img src="images/img-7.jpeg" alt="">
+            <img src="images/img-8.jpeg" alt="">
+            <img src="images/img-9.jpeg" alt="">
+            <img src="images/img-10.jpeg" alt="">>
+
+        </div>
+        
+    </section>
+    <script src="album.js"></script>
+</body>
+</html>

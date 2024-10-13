@@ -1,0 +1,88 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+.head-container{
+    background-color: rgb(70, 12, 230);
+    color: bisque;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+a{
+    color: cyan;
+}
+svg{
+    width: 20px;
+    height: 20px;
+}
+img{
+    border-radius: 10px;
+}
+p{
+    color: rgb(16, 26, 227);
+    font-family: "Dancing Script", cursive;
+    font-size: larger;
+    font-optical-sizing: auto;
+    font-weight: 25px;
+    font-style: normal;
+    text-align: center;
+}
+.svg-div{
+    display: flex;
+    justify-content: space-around;
+
+}
+.svg:hover{
+    color: rgb(190, 23, 199);
+}
+.image-container{
+    display: grid;
+    
+    grid-template-columns: auto auto auto auto ;
+    gap: 50px;
+    justify-content: center;
+
+}
+@media screen and (max-width: 600px) {
+    .image-container{
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 1;
+    }
+  }
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background: rgb(183,208,221);
+    background: radial-gradient(circle, rgba(183,208,221,1) 52%, rgba(13,213,213,1) 100%);
+    padding: 10px;
+    border-radius: 25px;
+    position: relative;
+}
+img:hover{
+    box-shadow: 10px 10px 10px 10px rgb(204, 76, 191);
+    filter: blur(1.5 rem);
+    opacity: 0.5;
+    
+}
+.like{
+    color: rgb(23, 110, 154);
+    border-radius: 10%;
+}
+.like:hover{
+    transition: transform 2s ease-in-out;
+  transform: rotate(360deg);
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  border-radius: 50%;
+}
+.top{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
